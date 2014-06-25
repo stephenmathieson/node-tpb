@@ -173,7 +173,7 @@ function parseMeta(text) {
   var size = parts[1];
   return {
     date: parseTimestamp(uploaded.split(' ').pop()),
-    size: size.trim().split(' ').pop(),
+    size: size && size.trim().split(' ').pop(),
   };
 }
 
