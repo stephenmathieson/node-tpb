@@ -7,6 +7,8 @@
 
 ### var Search = require('tpb')
 
+  Require the module.
+
 ### var search = new Search(terms...)
 
   Create a new `Search` for the given `terms`.
@@ -52,6 +54,16 @@
   Invokes `fn(err, results)`.
 
 ## CLI
+
+## CLI
+
+  A simple CLI has been bundled.  It looks like this:
+  
+![TPB CLI](screenshot.png)
+
+  **HINT**: on osx hold cmd and dbl-click a url to open it in the browser. :)
+
+### Usage
 
 ```
 $ tpb --help
