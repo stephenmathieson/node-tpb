@@ -55,8 +55,6 @@
 
 ## CLI
 
-## CLI
-
   A simple CLI has been bundled.  It looks like this:
   
 ![TPB CLI](screenshot.png)
