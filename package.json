@@ -1,6 +1,6 @@
 {
   "name": "tpb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Search The Pirate Bay for torrents",
   "main": "index.js",
   "bin": {
