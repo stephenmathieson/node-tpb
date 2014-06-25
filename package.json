@@ -1,0 +1,39 @@
+{
+  "name": "tpb",
+  "version": "0.0.0",
+  "description": "Search The Pirate Bay for torrents",
+  "main": "index.js",
+  "bin": {
+    "tpb": "bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Mathieson <me@stephenmathieson.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "cli-table": "^0.3.0",
+    "commander": "^2.2.0",
+    "debug": "^1.0.2",
+    "superagent": "^0.18.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "pirate",
+    "bay",
+    "torrent",
+    "search"
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephenmathieson/node-tpb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stephenmathieson/node-tpb/issues"
+  },
+  "homepage": "https://github.com/stephenmathieson/node-tpb"
+}
