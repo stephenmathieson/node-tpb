@@ -23,15 +23,18 @@ exports.ENDPOINT = 'http://thepiratebay.se';
  * Create a new `Search` with the given `terms`.
  *
  * @api public
- * @param {String} ...
+ * @param {String} terms...
  */
 
-function Search() {
-  var terms = [].slice.call(arguments);
+function Search(terms) {
+  var terms = Array.isArray(terms)
+    ? terms
+    : [].slice.call(arguments);
   if (!(this instanceof Search)) {
     return new Search(terms);
   }
 
+  debug('search terms: "%s"', terms.join('", "'));
   this._terms = terms;
   this.page(0);
   this.filter('seeders');
@@ -188,7 +191,9 @@ function parseMeta(text) {
 function parseTimestamp(date) {
   var month = date.substring(0, 2);
   var day = date.substring(3, 5);
-  var year = ~date.indexOf(':') ? new Date().getFullYear() : date.substr(-4);
+  var year = ~date.indexOf(':')
+    ? new Date().getFullYear()
+    : date.substr(-4);
   return new Date([month, day, year].join('/'));
 }
 
