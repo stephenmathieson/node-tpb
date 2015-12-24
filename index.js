@@ -17,7 +17,7 @@ exports = module.exports = Search;
  * TPB endpoint.  May be overwritten.
  */
 
-exports.ENDPOINT = 'http://thepiratebay.se';
+exports.ENDPOINT = 'http://thepiratebay.la';
 
 /**
  * Create a new `Search` with the given `terms`.
